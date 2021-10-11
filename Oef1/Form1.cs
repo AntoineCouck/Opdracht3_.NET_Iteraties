@@ -188,11 +188,11 @@ namespace Oef1
         {
             if (personen.IsAanwezigOpStapel(new Persoon(persoonInput.Text , int.Parse(inputleeftijd.Text))))
             {
-                MessageBox.Show(" de persoon met naam : " + persoonInput.Text + " en met leeftijd : " + inputleeftijd.Text + "" + "is aanwezig in de lijst van personen");
+                MessageBox.Show(" de persoon met naam : " + " " + persoonInput.Text + " en met leeftijd : " + " " + inputleeftijd.Text + " " + "is aanwezig in de lijst van personen");
             }
             else
             {
-                MessageBox.Show("de persoon met naam : " + persoonInput.Text + "bestaat niet in de lijst");
+                MessageBox.Show("de persoon met naam : " + " "+ persoonInput.Text + " " + "bestaat niet in de lijst");
             }
         }
 

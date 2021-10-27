@@ -199,7 +199,7 @@ namespace Oef1
         private void copyPersoon_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" old list : " + personen.ToString() + "\n new list  de nieuwe lijst is : " + " " +
-                String.Join(",", personen.lijstCopy()));
+                String.Join(":", personen.lijstCopy()));
         }
     }
 }

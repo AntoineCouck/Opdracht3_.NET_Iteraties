@@ -69,20 +69,7 @@ namespace Oef1
             label6.Text =  "integers: " +  integers.ToString();
         }
 
-        private void SearchInteger_Click(object sender, EventArgs e)
-        {
-            if (integers.IsAanwezigOpStapel(int.Parse(integersInput.Text))){
-
-                MessageBox.Show(integersInput.Text + " " +  "is aanwezig op de stapel van integers");
-            } else 
-            {
-                MessageBox.Show("sorry maar " + integersInput.Text + " bestaat niet op de stapel");
-            }
-
-            integersInput.Text = null;
-
-            
-        }
+      
 
         private void CopyListInteger_Click(object sender, EventArgs e)
         {
@@ -96,6 +83,23 @@ namespace Oef1
             strings.OpDeStapel(stringsInput.Text);
 
             stringsInput.Text = null;
+        }
+
+        private void SearchInteger_Click(object sender, EventArgs e)
+        {
+            if (integers.IsAanwezigOpStapel(int.Parse(integersInput.Text)))
+            {
+
+                MessageBox.Show(integersInput.Text + " " + "is aanwezig op de stapel van integers");
+            }
+            else
+            {
+                MessageBox.Show("sorry maar " + integersInput.Text + " bestaat niet op de stapel");
+            }
+
+            integersInput.Text = null;
+
+
         }
 
         private void verwijderenStrings_Click(object sender, EventArgs e)
@@ -136,7 +140,7 @@ namespace Oef1
 
         private void copyStrings_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" old list : " + strings.ToString() + "\n new list  de nieuwe lijst is : " + " " + 
+            MessageBox.Show(strings.ToString() + "\n de nieuwe lijst is : " + " " + 
                 String.Join(",", strings.lijstCopy()));
         }
 
